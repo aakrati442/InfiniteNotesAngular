@@ -1,0 +1,7 @@
+<div class="notes-container">
+  <div class="note" *ngFor="let note of notes">
+    <textarea [(ngModel)]="note.content"></textarea>
+    <button (click)="deleteNote(note)">Delete</button>
+  </div>
+  <button (click)="addNote()">Add Note</button>
+</div>
